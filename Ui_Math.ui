@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/** QFrame */
+
+QFrame#fr_fondo{
+	background: #151E23;
+	border-radius: 40px;
+	border: 5px solid rgb(32, 195, 84);
+}
+
+/** QLabel */
+
+QLabel#lbl_title {
+	font: 24px arial;
+	color: white;
+}
+
+QLabel#lbl_ecuaciones {
+	color: white;
+}
+
+/** QPushButton */
+
+QPushButton#btn_minimizar {
+	background: rgb(70, 70, 70);
+	border-radius: 10px;
+}
+
+QPushButton#btn_cerrar{
+	background: rgb(166, 0, 0);
+	border-radius: 10px;
+}
+
+QPushButton#btn_minimizar:hover{
+	background: rgb(85, 85, 85);
+}
+
+QPushButton#btn_cerrar:hover{
+	background: rgb(214, 0, 0);
+}
+
+QPushButton#btn_opc1, #btn_opc2, #btn_opc3, #btn_opc4 {
+	background-color: rgb(21, 30, 35);
+	color:rgba(255, 255, 255, 210);
+	border-radius: 25px;
+	font: 20px arial;
+
+	border: 4px solid rgb(56, 57, 59);
+	border-bottom: 6px solid rgb(56, 57, 59);
+}
+
+QPushButton#btn_opc1:hover, #btn_opc2:hover, #btn_opc3:hover, #btn_opc4:hover {	
+	background-color: rgba(56, 57, 59, .2);
+}
+
+QPushButton#btn_opc1:pressed, #btn_opc2:pressed, #btn_opc3:pressed, #btn_opc4:pressed {
+	padding-left:10px;
+	border-bottom: 4px solid rgb(56, 57, 59);
+}
+
+QPushButton#btn_continuar {
+	background-color: rgb(56, 57, 59);
+	color: #151E23;
+	border-radius: 25px;
+	font: 20px arial;
+}
+
+/** Author: Francisco J. Velez O. */
+</string>
+  </property>
+  <widget class="QFrame" name="fr_fondo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>370</width>
+     <height>510</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="lbl_ecuaciones">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>350</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>x - 1y = 4x + 6y</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cerrar">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_minimizar">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_title">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>12</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>arial</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Resuelve</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_opc1">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>160</y>
+      <width>311</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>x=10</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_opc2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>230</y>
+      <width>311</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>x=20</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_opc3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>311</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>x=30</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_opc4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>370</y>
+      <width>311</width>
+      <height>55</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>x=40</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_continuar">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>440</y>
+      <width>251</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>arial</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string>Comprueba</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_cerrar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>398</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_minimizar</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

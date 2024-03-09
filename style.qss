@@ -1,0 +1,69 @@
+/** QFrame */
+
+QFrame#fr_fondo{
+    background: #151E23;
+    border-radius: 40px;
+    /* border: 5px solid rgb(32, 195, 84); */
+    border: 5px solid rgb(0, 181, 252);
+}
+
+/** QLabel */
+
+QLabel#lbl_title {
+    font: 24px arial;
+    color: rgba(202, 242, 255, 0.9);
+}
+
+QLabel#lbl_ecuaciones {
+    color: rgb(174, 244, 224);
+}
+
+/** QPushButton */
+
+QPushButton#btn_minimizar {
+    background: rgb(70, 70, 70);
+    border-radius: 10px;
+}
+
+QPushButton#btn_cerrar{
+    background: rgb(166, 0, 0);
+    border-radius: 10px;
+}
+
+QPushButton#btn_minimizar:hover{
+    background: rgb(85, 85, 85);
+}
+
+QPushButton#btn_cerrar:hover{
+    background: rgb(214, 0, 0);
+}
+
+QPushButton#btn_opc1, #btn_opc2, #btn_opc3, #btn_opc4 {
+    background-color: rgb(21, 30, 35);
+    color:rgba(255, 255, 255, 210);
+    font: 20px arial;
+    
+    border-radius: 25px;
+    border: 4px solid rgb(56, 57, 59);
+}
+
+QPushButton#btn_opc1:hover, #btn_opc2:hover, #btn_opc3:hover, #btn_opc4:hover {    
+    background-color: rgba(56, 57, 59, .2);
+}
+
+QPushButton#btn_opc1:pressed, #btn_opc2:pressed, #btn_opc3:pressed, #btn_opc4:pressed {
+    padding-left: 10px;
+}
+
+QPushButton#btn_continuar {
+    background-color: rgb(56, 57, 59);
+    color: #151E23;
+    border-radius: 25px;
+    font: 20px arial;
+}
+
+QPushButton#btn_continuar:pressed {
+    padding-left: 10px;
+}
+
+/** Author: Francisco J. Velez O. */
